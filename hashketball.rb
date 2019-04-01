@@ -85,6 +85,7 @@ def player_numbers(team)
         if k2 == :points
           return v2 
         end #if 
+      end #do
   else 
     "No team"
   end #end if 
