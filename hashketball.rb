@@ -121,4 +121,22 @@ def player_stats(player)
   end #end if
 end 
 
+def big_shoe_rebounds
+all_player_stats = game_hash[:away][:players].merge(game_hash[:home][:players])
+big_shoe = nil
+big_shoe_name = nil
+all_player_stats.each do |k,v|
+#puts "im here " + k
+v.each do |k2,v2|
+if k2 == :shoe
+  if big_shoe == nil || v2 > big_shoe
+big_shoe = v2
+big_shoe_name = k
+  end
+end #if k2
+end #do2
+end #do1
+big_shoe_name
+end #big shoe
+
 
