@@ -86,7 +86,6 @@ def player_numbers(team)
         end #if 
     end #end do
   end
-    
   elsif team_name_away.include?(team)
   game_hash[:away][:players].each do |k1,v1|
       v1.each do |k2,v2|
