@@ -83,7 +83,7 @@ def player_numbers(team)
   number = []
     game_hash[:home][:players].each do |k1,v1|
       v1.each do |k2,v2|
-        if k2 == :numbers
+        if k2 == :number
           #puts v2
           number.push(v2)
   
@@ -95,7 +95,7 @@ def player_numbers(team)
   number = []
   game_hash[:away][:players].each do |k1,v1|
       v1.each do |k2,v2|
-        if k2 == :points
+        if k2 == :number
           number.push(v2) 
         end #if 
       end #do
