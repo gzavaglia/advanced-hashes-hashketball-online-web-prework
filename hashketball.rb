@@ -69,6 +69,13 @@ def team_colors(team)
   end 
 end #end team_colors
 
+def team_names
+  team_name_home = game_hash[:home][:team_name]
+  team_name_away = game_hash[:away][:team_name]
+  both_teams = [team_name_home, team_name_away]
+end #end team names
+
+
 def player_numbers(team)
   team_name_home = game_hash[:home][:team_name]
   team_name_away = game_hash[:away][:team_name]
