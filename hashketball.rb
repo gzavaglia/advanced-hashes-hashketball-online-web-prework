@@ -136,7 +136,7 @@ big_shoe_name = k
 end #if k2
 end #do2
 end #do1
-big_shoe_name
+big_shoe_reb = all_player_stats[big_shoe_name][:rebounds]
 end #big shoe
 
 
