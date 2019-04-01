@@ -106,8 +106,19 @@ def player_numbers(team)
   end #end if 
 end #end player_numbers
 
-def player_stats
-
-end #end player_stats
+def player_stats(player)
+  player_names_home = game_hash[:home][:players].keys
+  player_names_away = game_hash[:away][:players].keys
+  #player_points_home = game_hash[:home][:players][player][:points]
+  #player_points_away = game_hash[:away][:players][player][:points]
+  if player_names_home.include?(player)
+    game_hash[:home][:players][player]
+  elsif player_names_away.include?(player)
+    game_hash[:away][:players][player]
+  else
+  puts "Player not found"
+  "Please try again"
+  end #end if
+end 
 
 
