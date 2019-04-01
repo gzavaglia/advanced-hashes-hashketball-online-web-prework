@@ -57,7 +57,16 @@ def shoe_size(player)
   end #end if
 end 
 
-def team_colors
+def team_colors(team)
+  team_name_home = game_hash[:home][:team_name]
+  team_name_away = game_hash[:away][:team_name]
+  if team_name_home.include?(team)
+    game_hash[:home][:colors]
+  elsif team_name_away.include?(team)
+    game_hash[:away][:colors]
+  else 
+    "Team not playing, Please try again"
+end #end team_colors
 
 
 
