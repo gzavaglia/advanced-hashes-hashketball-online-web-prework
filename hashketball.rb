@@ -83,7 +83,7 @@ def player_numbers(team)
   number = []
     game_hash[:home][:players].each do |k1,v1|
       v1.each do |k2,v2|
-        if k2 == :points
+        if k2 == :numbers
           #puts v2
           number.push(v2)
   
