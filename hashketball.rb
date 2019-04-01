@@ -66,6 +66,7 @@ def team_colors(team)
     game_hash[:away][:colors]
   else 
     "Team not playing, Please try again"
+  end 
 end #end team_colors
 
 
