@@ -98,7 +98,6 @@ def player_numbers(team)
     "No team"
   end #end if 
 end #end player_numbers
-end 
 
 
 
