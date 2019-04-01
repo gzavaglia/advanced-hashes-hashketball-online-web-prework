@@ -78,22 +78,29 @@ end #end team names
 def player_numbers(team)
   team_name_home = game_hash[:home][:team_name]
   team_name_away = game_hash[:away][:team_name]
+  
   if team_name_home.include?(team)
+  number = []
     game_hash[:home][:players].each do |k1,v1|
       v1.each do |k2,v2|
         if k2 == :points
-          return v2 
+          #puts v2
+          number.push(v2)
+  
         end #if 
     end #end do
   end
+  number
   elsif team_name_away.include?(team)
+  number = []
   game_hash[:away][:players].each do |k1,v1|
       v1.each do |k2,v2|
         if k2 == :points
-          return v2 
+          number.push(v2) 
         end #if 
       end #do
     end #do
+    number 
   else 
     "No team"
   end #end if 
