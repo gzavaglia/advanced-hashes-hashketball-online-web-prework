@@ -42,7 +42,20 @@ def num_points_scored(player)
   end #end if
 end 
 
-
+def shoe_size(player)  
+  player_names_home = game_hash[:home][:players].keys
+  player_names_away = game_hash[:away][:players].keys
+  #player_points_home = game_hash[:home][:players][player][:points]
+  #player_points_away = game_hash[:away][:players][player][:points]
+  if player_names_home.include?(player)
+    game_hash[:home][:players][player][:shoe]
+  elsif player_names_away.include?(player)
+    game_hash[:away][:players][player][:shoe]
+  else
+  puts "Player not found"
+  "Please try again"
+  end #end if
+end 
 
 
 
