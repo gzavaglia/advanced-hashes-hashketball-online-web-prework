@@ -69,8 +69,13 @@ def team_colors(team)
   end 
 end #end team_colors
 
-
-
+def player_numbers(team)
+  team_name_home = game_hash[:home][:team_name]
+  team_name_away = game_hash[:away][:team_name]
+  if team_name_home.include?(team)
+    
+  end #end if 
+end #end player_numbers
 
 
 
